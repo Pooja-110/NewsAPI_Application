@@ -8,20 +8,29 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E60C0C0C"
-        android:id="@+id/tool">
+        android:layout_height="43dp"
+        android:background="#E60C0C0C">
 
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="DailyNews"
-           android:textSize="28sp"
-           android:textStyle="bold"
-           android:fontFamily="sans-serif-black"
-           android:textColor="#7ED9E4"/>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="NewsApp"
+            android:textColor="#7ED9E4"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_newspaper_24"
+            android:contentDescription="Icon"
+            app:tint="#FF0000"
+            android:layout_gravity="start|center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
 
     </androidx.appcompat.widget.Toolbar>
     <com.google.android.material.tabs.TabLayout
@@ -33,12 +42,13 @@
         app:tabIndicatorColor="#00BCD4"
         app:tabIndicatorHeight="3.5dp"
         android:layout_below="@+id/tool"
+        app:tabIconTint="#00BCD4"
         app:tabMode="scrollable">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HOME"
+            android:icon="@drawable/home"
             android:id="@id/home">
         </com.google.android.material.tabs.TabItem>
         <com.google.android.material.tabs.TabItem
@@ -88,6 +98,8 @@
 
 
 </androidx.viewpager.widget.ViewPager>
+
+
 
 
 </RelativeLayout>

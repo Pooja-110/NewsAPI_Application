@@ -18,13 +18,13 @@ import java.util.List;
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     private Context context;
-    private List<ModelClass> originalData; // Store the original data
-    private List<ModelClass> filteredData; // Store the filtered data
+    private List<ModelClass> originalData;
+    private List<ModelClass> filteredData;
 
     public Adapter(Context context, List<ModelClass> arrayList) {
         this.context = context;
         this.originalData = arrayList;
-        this.filteredData = new ArrayList<>(arrayList); // Initialize filtered data with original data
+        this.filteredData = new ArrayList<>(arrayList);
     }
 
     @NonNull

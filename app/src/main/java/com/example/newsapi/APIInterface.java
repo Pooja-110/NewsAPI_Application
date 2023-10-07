@@ -18,7 +18,4 @@ public interface APIInterface {
                                     @Query("category") String category,
                                     @Query("apiKey") String apiKey);
 
-    @GET("everything") // Define a new endpoint for search
-    Call<MainModel> searchNews(@Query("q") String query, // Add a query parameter for the search query
-                               @Query("apiKey") String apiKey);
 }

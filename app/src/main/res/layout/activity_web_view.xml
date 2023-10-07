@@ -9,19 +9,30 @@
 
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E60C0C0C"
-        android:id="@+id/tool">
+        android:layout_height="43dp"
+        android:background="#E60C0C0C">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DailyNews"
+            android:fontFamily="sans-serif-black"
+            android:text="NewsApp"
+            android:textColor="#7ED9E4"
             android:textSize="28sp"
             android:textStyle="bold"
-            android:fontFamily="sans-serif-black"
-            android:textColor="#7ED9E4"/>
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_newspaper_24"
+            android:contentDescription="Icon"
+            app:tint="#FF0000"
+            android:layout_gravity="start|center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
 
     </androidx.appcompat.widget.Toolbar>
 
