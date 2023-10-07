@@ -10,27 +10,16 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tool"
         android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:background="#E60C0C0C">
+        android:layout_height="80dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:text="NewsApp"
-            android:textColor="#7ED9E4"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            />
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_newspaper_24"
+            android:layout_marginTop="10dp"
             android:contentDescription="Icon"
-            app:tint="#FF0000"
-            android:layout_gravity="start|center_vertical"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"/>
+            android:paddingEnd="76dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/news" />
 
     </androidx.appcompat.widget.Toolbar>
     <com.google.android.material.tabs.TabLayout
@@ -38,11 +27,11 @@
         android:layout_height="?android:actionBarSize"
         android:id="@+id/tab"
         app:tabTextColor="#A81D1E1E"
-        app:tabSelectedTextColor="#00BCD4"
-        app:tabIndicatorColor="#00BCD4"
+        app:tabSelectedTextColor="#598BED"
+        app:tabIndicatorColor="#598BED"
         app:tabIndicatorHeight="3.5dp"
         android:layout_below="@+id/tool"
-        app:tabIconTint="#00BCD4"
+        app:tabIconTint="#598BED"
         app:tabMode="scrollable">
 
         <com.google.android.material.tabs.TabItem
