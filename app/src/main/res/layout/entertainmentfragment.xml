@@ -11,11 +11,14 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="2dp"
-        android:background="#E3E5EA"
         android:iconifiedByDefault="false"
         android:paddingStart="5dp"
         android:queryHint="Search"
-        app:showAsAction="always|collapseActionView" />
+        android:background="@drawable/rounded"
+        app:showAsAction="always|collapseActionView"
+        android:clickable="true"
+        app:iconifiedByDefault="false"
+        android:focusable="true" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/entertainment_fragment"

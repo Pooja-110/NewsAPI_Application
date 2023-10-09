@@ -11,14 +11,14 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tool"
         android:layout_width="match_parent"
-        android:layout_height="80dp">
+        android:layout_height="99dp">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:contentDescription="Icon"
-            android:paddingEnd="76dp"
+            android:paddingEnd="96dp"
             android:scaleType="fitXY"
             android:src="@drawable/news" />
 
