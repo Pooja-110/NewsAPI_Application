@@ -7,7 +7,6 @@
     tools:context=".webView">
 
 
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tool"
         android:layout_width="match_parent"
