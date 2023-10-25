@@ -7,25 +7,25 @@
     tools:context=".webView">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tool"
-        android:layout_width="match_parent"
-        android:layout_height="99dp">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:contentDescription="Icon"
-            android:paddingEnd="96dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/news" />
-
-    </androidx.appcompat.widget.Toolbar>
     <WebView
+        android:id="@+id/webpage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/webpage"
-        android:layout_below="@+id/tool"/>
+        android:layout_marginTop="30dp" >
+    </WebView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim"
+        android:layout_width="73dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="790dp"
+        android:layout_x="232dp"
+        android:layout_y="590dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/shareicon" />
 
 </RelativeLayout>
