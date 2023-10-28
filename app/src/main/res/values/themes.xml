@@ -6,6 +6,5 @@
         <item name="android:windowTranslucentStatus">true</item> <item name="android:windowTranslucentNavigation">true</item>
 
     </style>
-
     <style name="Theme.NewsAPI" parent="Base.Theme.NewsAPI" />
 </resources>
